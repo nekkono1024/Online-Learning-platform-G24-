@@ -6,7 +6,8 @@
         
     <body>
         <h2>Course and Online Assignment System</h2>
-        <form>
+        <p style="color:red;"><%= typeof error !== 'undefined' && error ? error : '' %></p>
+        <form action="/login" method="POST">
             <label for="username">Username: </label><input type="text" id="username" name="username" placeholder="Enter your Username" required><br><br>
             <label for="password">Password: </label><input type="password" id="password" name="password" placeholder="Enter your Password" required><br><br>
             <input type="submit" value="Login">
